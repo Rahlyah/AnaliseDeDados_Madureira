@@ -33,3 +33,10 @@ print(diferenca)
 df = pd.read_excel('base_invest.xlsx')  # Lê a planilha Excel da pasta​
 
 print(df.head())                        # Exibe as 5 primeiras linhas
+
+df_transacoes = pd.read_excel('base_invest.xlsx', sheet_name='Transacoes')
+
+df_ativo = pd.read_excel('base_invest.xlsx', sheet_name='Ativo')
+
+print(df_transacoes.head())
+print(df_ativo.head())
